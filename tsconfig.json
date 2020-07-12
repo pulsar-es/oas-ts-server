@@ -16,6 +16,7 @@
     "paths": {
       "@constants": ["src/constants"],
       "@enums": ["src/enums"],
+      "@database/*": ["database/*"],
       "@models/*": ["src/models/*"],
       "@domains": ["src/domains"],
       "@http/*": ["src/http/*"],
