@@ -14,27 +14,14 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@constants": [
-        "src/constants"
-      ],
-      "@database": [
-        "src/database"
-      ],
-      "@domains": [
-        "src/domains"
-      ],
-      "@http": [
-        "src/http"
-      ],
-      "@services": [
-        "src/services"
-      ],
-      "@utils": [
-        "src/utils"
-      ],
-      "@/*": [
-        "src/*"
-      ]
+      "@constants": ["src/constants"],
+      "@enums": ["src/enums"],
+      "@models/*": ["src/models/*"],
+      "@domains": ["src/domains"],
+      "@http/*": ["src/http/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@/*": ["src/*"]
     },
     "plugins": [
       {
@@ -43,7 +30,5 @@
       }
     ]
   },
-  "exclude": [
-    "package.json"
-  ]
+  "exclude": ["package.json"]
 }
