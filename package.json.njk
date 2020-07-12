@@ -5,10 +5,10 @@
   "private": true,
   "author": "<add your company or personal name here>",
   "scripts": {
-    "build": "ttsc -p .",
+    "build": "tsc",
     "cli-script": "VERBOSE=true && node ./build/server.js -r ",
     "dev:setup": "git config core.hooksPath githooks && cp -n .env.example .env",
-    "build:watch": "ttsc --watch -p .",
+    "build:watch": "tsc -w",
     "dev:start": "nodemon ./build/server.js",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "lint:fix": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
@@ -73,7 +73,6 @@
     "nodemon": "^2.0.4",
     "ts-jest": "^26.0.0",
     "ts-node": "^8.10.2",
-    "ttypescript": "^1.5.10",
     "typescript": "^3.9.3"
   }
 }

@@ -1,8 +1,7 @@
 import run from '@/cli/run';
-import app from './src/app';
-import appCli from './src/app.cli';
-import config from './src/config';
-import packageJson from './package.json';
+import app from './app';
+import appCli from './app.cli';
+import config from './config';
 
 const cliInput = appCli();
 const PORT = cliInput.port || config.port;
@@ -15,9 +14,7 @@ app()
         } else {
             // Start listening for incoming HTTP requests
             expressApp.listen(PORT, () => {
-                console.log(
-                    `${packageJson.name}:${packageJson.version} server listening on port, ${PORT}`
-                );
+                console.log(`server listening on port, ${PORT}`);
             });
         }
     })
