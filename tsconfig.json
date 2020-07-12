@@ -31,5 +31,6 @@
       }
     ]
   },
+  "include": ["src/**/*", "server.ts", "database"],
   "exclude": ["package.json"]
 }
