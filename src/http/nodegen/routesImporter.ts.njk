@@ -10,7 +10,7 @@ import {{prettifyRouteName(endpoint)}}Routes from './routes/{{prettifyRouteName(
 {% endif -%}
 {% endfor -%}
 
-export default function (app: express.Application) {
+export default function (app: express.Application | express.Router) {
   {% for endpoint in endpoints -%}
     {% if(endsWith(swagger.basePath, '/')) %}
   app.use('{{swagger.basePath}}{{endpoint}}', {{prettifyRouteName(endpoint)}}Routes())
